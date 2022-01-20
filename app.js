@@ -15,7 +15,7 @@ function onLoginSubmit(event) {
 
   //store the username into local storage
   //key: username, value: username
-  localStorage.setItem("USERNAME_KEY", username);
+  localStorage.setItem(USERNAME_KEY, username);
 
   paintGreetings(username);
 }
@@ -29,7 +29,7 @@ function paintGreetings(username) {
 
 // loginForm.addEventListener("submit", onLoginSubmit);
 
-const savedUsername = localStorage.getItem("USERNAME_KEY");
+const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 //checking the username from local storage
 if (savedUsername === null) {
